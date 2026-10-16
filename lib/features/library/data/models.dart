@@ -26,7 +26,7 @@ class Track {
     this.isSystemSound = false,
   });
 
-  /// Stable identifier used for persistence: `d:<mediaId>` or `demo:<name>`.
+  /// Stable identifier used for persistence: `d:<mediaId>`, `f:<path>` (desktop) or `demo:<name>`.
   final String key;
   final int? mediaId;
   final String title;
@@ -123,7 +123,8 @@ class Track {
   String get folderPath {
     final p = path;
     if (p == null) return demoFolderPath;
-    final i = p.lastIndexOf('/');
+    // Windows paths use backslashes.
+    final i = p.lastIndexOf(RegExp(r'[/\\]'));
     return i <= 0 ? '/' : p.substring(0, i);
   }
 

@@ -1,10 +1,41 @@
 # Navo — oflayn musiqa pleyeri
 
-Flutter'da yozilgan Android (va iOS) uchun oflayn musiqa pleyeri. Telefondagi qo'shiqlarni o'qiydi, internet talab qilmaydi. Interfeys **o'zbek**, **rus** va **ingliz** tillarida.
+Flutter'da yozilgan oflayn musiqa pleyeri: Android, Windows va macOS. Qurilmadagi qo'shiqlarni o'qiydi, internet talab qilmaydi. Interfeys **o'zbek**, **rus** va **ingliz** tillarida.
 
 Dizayn va dasturlash: Feruzbek Namozboyev.
 
-Joriy versiya: **1.1.0** — o'zgarishlar ro'yxati [CHANGELOG.md](CHANGELOG.md) faylida.
+Joriy versiya: **1.2.0** — o'zgarishlar ro'yxati [CHANGELOG.md](CHANGELOG.md) faylida.
+
+![Pleyer](docs/screenshots/04-player.jpg)
+
+## Yuklab olish
+
+Tayyor fayllar [Releases](https://github.com/Feruzbek0318/navo-music-player/releases/latest) sahifasida:
+
+| Platforma | Fayl | O'rnatish |
+|---|---|---|
+| Android 5.0+ | `Navo-1.2.0-android.apk` | Telefonga yuklab oling va oching. "Noma'lum manbalardan o'rnatish"ga ruxsat berish so'ralishi mumkin. |
+| Windows 10/11 (64-bit) | `Navo-1.2.0-windows-setup.exe` | *Tez orada qo'shiladi.* O'rnatuvchini ishga tushiring. SmartScreen chiqsa: **Batafsil → Baribir ishga tushirish**. |
+| macOS 10.15+ (Intel va Apple Silicon) | `Navo-1.2.0-macos.dmg` | DMG'ni oching va Navo'ni **Applications** papkasiga torting. Birinchi marta: ilovani o'ng tugma bilan bosib **Open** tanlang (ilova Apple tomonidan imzolanmagan). |
+| Manba kodi | `Source code (zip / tar.gz)` | Har bir relizga GitHub avtomatik qo'shadi. |
+
+Kompyuter versiyalari foydalanuvchining **Musiqa** (`Music`) papkasidagi qo'shiqlarni (MP3, M4A, AAC, FLAC, OGG, Opus, WAV) o'qiydi.
+
+## Ekran rasmlari
+
+> Rasmlardagi qo'shiqlar — ilova bilan birga keladigan demo treklar.
+
+| Tanishtiruv | Bosh sahifa | Qo'shiqlar |
+|---|---|---|
+| ![Tanishtiruv](docs/screenshots/01-onboarding.jpg) | ![Bosh sahifa](docs/screenshots/02-home.jpg) | ![Qo'shiqlar](docs/screenshots/03-songs-playing.jpg) |
+
+| Pleyer | Qo'shiq matni | Ijro navbati |
+|---|---|---|
+| ![Pleyer](docs/screenshots/04-player.jpg) | ![Qo'shiq matni](docs/screenshots/05-lyrics.jpg) | ![Navbat](docs/screenshots/06-queue.jpg) |
+
+| Sozlamalar | Ekvalayzer | Ko'rinish |
+|---|---|---|
+| ![Sozlamalar](docs/screenshots/07-settings.jpg) | ![Ekvalayzer](docs/screenshots/08-equalizer.jpg) | ![Ko'rinish](docs/screenshots/09-appearance.jpg) |
 
 ## Imkoniyatlar
 
@@ -68,6 +99,15 @@ Testlar: LRC parser, saralash/guruhlash, qidiruv, saqlash, pleylistlar, audio ha
 - Android: compileSdk 36, minSdk 21+. AGP 9.1 / Gradle 9.3.
 - iOS: CocoaPods kerak (`sudo gem install cocoapods`, keyin `cd ios && pod install`). Pastga qarang.
 
+### Kompyuter versiyalarini yig'ish
+
+```bash
+flutter build macos --release      # build/macos/Build/Products/Release/Navo.app
+flutter build windows --release    # faqat Windows kompyuterda
+```
+
+Windows o'rnatuvchisi (EXE) Inno Setup bilan yig'iladi: [windows/installer/navo.iss](windows/installer/navo.iss). Windows kompyuterda `flutter build windows --release`dan keyin `iscc windows\installer\navo.iss` ishga tushiring — natija `build/release/` papkasida.
+
 ### Release build imzosi
 
 Kalit fayllari (`key.properties`, `*.jks`, `*.keystore`) repozitoriyga kirmaydi — `.gitignore`da. Release APK uchun o'z kalitingizni yarating va `android/key.properties` faylini mahalliy saqlang.
@@ -101,7 +141,7 @@ end
 
 ```
 lib/
-  main.dart                 Hive + AudioService ishga tushirish, ProviderScope
+  main.dart                 Hive + AudioService (Windows/Linux'da media_kit) ishga tushirish
   app.dart                  MaterialApp, til tanlash, mavzu
   core/
     constants/app_info.dart Muallif kontaktlari (About ekrani)
@@ -131,6 +171,8 @@ Holat har bir bo'limning `state/` papkasidagi Riverpod provayderlarida. Vidjetla
 
 ## Ma'lum cheklovlar
 
+- Kompyuter versiyalarida faqat `Music` papkasi o'qiladi. Qo'ng'iroq ohangi, qo'shiqni o'chirish va teg muharriri faqat Android'da ishlaydi. Ekvalayzer va ovoz kuchaytirgich ham faqat Android'da.
+- Windows'da tizimning media boshqaruvi (klaviatura media tugmalari, bildirishnoma) hali yo'q.
 - "Audio chiqish" Android'ning tizim tanlagichini ochadi (Android 11+). iOS'da tanlagich yo'q, Chromecast qo'llanmaydi.
 - `on_audio_query_plus_android` hali Kotlin Gradle Plugin'ni ishlatadi, shuning uchun build paytida "Built-in Kotlin" ogohlantirishi chiqadi. Build ishlaydi.
 

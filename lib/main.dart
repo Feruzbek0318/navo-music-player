@@ -1,10 +1,12 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:audio_service/audio_service.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:just_audio_media_kit/just_audio_media_kit.dart';
 
 import 'app.dart';
 import 'core/platform/device_bridge.dart';
@@ -34,6 +36,8 @@ Future<void> _bootstrap() async {
     return true;
   };
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+  // just_audio has no native Windows/Linux backend; media_kit provides one.
+  JustAudioMediaKit.ensureInitialized(linux: true, windows: true);
 
   final store = await LocalStore.open();
   final bridge = DeviceBridge();
@@ -48,18 +52,26 @@ Future<void> _bootstrap() async {
   final l10n = lookupAppLocalizations(locale);
 
   // A single handler for the whole app, created before the UI.
-  final handler = await AudioService.init<NavoAudioHandler>(
-    builder: () => NavoAudioHandler(artworkUriFor: music.artworkFileUri, effects: AudioEffects()),
-    config: AudioServiceConfig(
-      androidNotificationChannelId: 'uz.feruzbek.navo.playback',
-      androidNotificationChannelName: l10n.notificationChannelName,
-      androidNotificationIcon: 'drawable/ic_stat_navo',
-      androidNotificationOngoing: true,
-      androidStopForegroundOnPause: true,
-      fastForwardInterval: const Duration(seconds: 10),
-      rewindInterval: const Duration(seconds: 10),
-    ),
+  NavoAudioHandler buildHandler() => NavoAudioHandler(
+    artworkUriFor: music.artworkFileUri,
+    effects: AudioEffects(),
   );
+  // audio_service has no Windows/Linux implementation; there the handler
+  // runs without system media controls.
+  final handler = Platform.isWindows || Platform.isLinux
+      ? buildHandler()
+      : await AudioService.init<NavoAudioHandler>(
+          builder: buildHandler,
+          config: AudioServiceConfig(
+            androidNotificationChannelId: 'uz.feruzbek.navo.playback',
+            androidNotificationChannelName: l10n.notificationChannelName,
+            androidNotificationIcon: 'drawable/ic_stat_navo',
+            androidNotificationOngoing: true,
+            androidStopForegroundOnPause: true,
+            fastForwardInterval: const Duration(seconds: 10),
+            rewindInterval: const Duration(seconds: 10),
+          ),
+        );
 
   final container = ProviderContainer(
     overrides: [
@@ -74,7 +86,9 @@ Future<void> _bootstrap() async {
   // background.
   container.listen(playerControllerProvider, (_, _) {}, fireImmediately: true);
 
-  runApp(UncontrolledProviderScope(container: container, child: const NavoApp()));
+  runApp(
+    UncontrolledProviderScope(container: container, child: const NavoApp()),
+  );
 }
 
 void _report(String source, Object error, StackTrace? stack) {

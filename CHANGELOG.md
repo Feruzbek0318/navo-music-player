@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.0 (2026-10-16)
+
+### Added
+- Desktop versions: macOS (DMG) and Windows (installer EXE). They read the user's Music folder (MP3, M4A, AAC, FLAC, OGG, Opus, WAV) and show embedded cover art.
+- Windows / Linux playback through media_kit.
+- App name "Navo" and launcher icon on macOS and Windows.
+
 ## 1.1.0 (2026-10-12)
 
 ### Added
