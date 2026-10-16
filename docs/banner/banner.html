@@ -1,0 +1,84 @@
+<!doctype html>
+<!-- Source of docs/banner.png and docs/social-preview.png (1280×640).
+     Re-render: see the README section "Banner". -->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: Urbanist; font-weight: 500; src: url(../../assets/fonts/Urbanist-Medium.ttf); }
+  @font-face { font-family: Urbanist; font-weight: 600; src: url(../../assets/fonts/Urbanist-SemiBold.ttf); }
+  @font-face { font-family: Urbanist; font-weight: 700; src: url(../../assets/fonts/Urbanist-Bold.ttf); }
+  @font-face { font-family: Manrope; font-weight: 600; src: url(../../assets/fonts/Manrope-SemiBold.ttf); }
+
+  :root { --bg: #1F2129; --bg2: #16171D; --orange: #FF9F1C; --text: #F5F5F7; --muted: #A4A7B5; }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 640px; overflow: hidden; }
+  body {
+    font-family: Urbanist, sans-serif; color: var(--text);
+    background:
+      radial-gradient(620px 520px at 900px 300px, rgba(255,159,28,.28), transparent 70%),
+      radial-gradient(500px 400px at 80px 640px, rgba(232,67,147,.14), transparent 70%),
+      linear-gradient(135deg, var(--bg) 0%, var(--bg2) 100%);
+    position: relative;
+  }
+  /* soft dots like the onboarding screen */
+  .dot { position: absolute; border-radius: 50%; background: var(--orange); }
+
+  .left { position: absolute; left: 72px; top: 0; bottom: 0; width: 560px;
+          display: flex; flex-direction: column; justify-content: center; }
+  .brand { display: flex; align-items: center; gap: 22px; }
+  .brand img { width: 92px; height: 92px; filter: drop-shadow(0 10px 30px rgba(255,159,28,.45)); }
+  .brand h1 { font-size: 104px; font-weight: 700; letter-spacing: -2px; line-height: 1; }
+  .tagline { margin-top: 22px; font-size: 40px; font-weight: 700; color: var(--orange); }
+  .sub { margin-top: 12px; font-size: 23px; font-weight: 500; color: var(--muted); line-height: 1.4; }
+
+  .chips { margin-top: 28px; display: flex; flex-wrap: nowrap; gap: 8px; }
+  .chip { padding: 8px 13px; border-radius: 999px; font-size: 17px; font-weight: 600;
+          background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); }
+  .chip b { color: var(--orange); font-weight: 700; margin-right: 6px; }
+
+  .meta { margin-top: 30px; display: flex; gap: 26px; font-size: 19px; font-weight: 600; color: var(--muted); }
+  .meta span { display: flex; align-items: center; gap: 8px; }
+  .meta i { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); display: inline-block; }
+  .ru { font-family: Manrope, sans-serif; font-size: 18px; }
+
+  .phone { position: absolute; width: 236px; height: 524px; border-radius: 34px; padding: 7px;
+           background: #0D0E12; border: 1px solid rgba(255,255,255,.14);
+           box-shadow: 0 30px 60px rgba(0,0,0,.55), 0 0 0 1px rgba(0,0,0,.4); }
+  .phone img { width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 27px; display: block; }
+  .p1 { left: 716px; top: 92px; transform: rotate(-7deg); opacity: .92; }
+  .p3 { left: 1012px; top: 92px; transform: rotate(7deg); opacity: .92; }
+  .p2 { left: 862px; top: 52px; width: 252px; height: 560px; z-index: 2;
+        box-shadow: 0 40px 80px rgba(0,0,0,.6), 0 0 60px rgba(255,159,28,.25); }
+</style>
+</head>
+<body>
+  <div class="dot" style="left:640px;top:70px;width:14px;height:14px;opacity:.8"></div>
+  <div class="dot" style="left:1210px;top:40px;width:10px;height:10px;opacity:.7"></div>
+  <div class="dot" style="left:690px;top:560px;width:18px;height:18px;opacity:.55"></div>
+  <div class="dot" style="left:40px;top:60px;width:12px;height:12px;opacity:.5"></div>
+
+  <div class="left">
+    <div class="brand">
+      <img src="../../assets/images/logo_mark.png" alt="">
+      <h1>Navo</h1>
+    </div>
+    <div class="tagline">Oflayn musiqa pleyeri</div>
+    <div class="sub">Internetsiz va reklamasiz — qurilmangizdagi<br>qo'shiqlar uchun chiroyli pleyer.</div>
+    <div class="chips">
+      <div class="chip"><b>♪</b>Qo'shiq matni</div>
+      <div class="chip"><b>≋</b>Ekvalayzer</div>
+      <div class="chip"><b>☰</b>Pleylistlar</div>
+      <div class="chip"><b>◐</b>Mavzular</div>
+    </div>
+    <div class="meta">
+      <span><i></i>Android · Windows · macOS</span>
+      <span><i></i>O'zbek · <span class="ru">Русский</span> · English</span>
+    </div>
+  </div>
+
+  <div class="phone p1"><img src="../screenshots/02-home.jpg" alt=""></div>
+  <div class="phone p2"><img src="../screenshots/04-player.jpg" alt=""></div>
+  <div class="phone p3"><img src="../screenshots/05-lyrics.jpg" alt=""></div>
+</body>
+</html>

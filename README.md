@@ -1,3 +1,5 @@
+![Navo — oflayn musiqa pleyeri](docs/banner.jpg)
+
 # Navo — oflayn musiqa pleyeri
 
 Flutter'da yozilgan oflayn musiqa pleyeri: Android, Windows va macOS. Qurilmadagi qo'shiqlarni o'qiydi, internet talab qilmaydi. Interfeys **o'zbek**, **rus** va **ingliz** tillarida.
@@ -5,8 +7,6 @@ Flutter'da yozilgan oflayn musiqa pleyeri: Android, Windows va macOS. Qurilmadag
 Dizayn va dasturlash: Feruzbek Namozboyev.
 
 Joriy versiya: **1.2.0** — o'zgarishlar ro'yxati [CHANGELOG.md](CHANGELOG.md) faylida.
-
-![Pleyer](docs/screenshots/04-player.jpg)
 
 ## Yuklab olish
 
@@ -175,6 +175,14 @@ Holat har bir bo'limning `state/` papkasidagi Riverpod provayderlarida. Vidjetla
 - Windows'da tizimning media boshqaruvi (klaviatura media tugmalari, bildirishnoma) hali yo'q.
 - "Audio chiqish" Android'ning tizim tanlagichini ochadi (Android 11+). iOS'da tanlagich yo'q, Chromecast qo'llanmaydi.
 - `on_audio_query_plus_android` hali Kotlin Gradle Plugin'ni ishlatadi, shuning uchun build paytida "Built-in Kotlin" ogohlantirishi chiqadi. Build ishlaydi.
+
+## Banner
+
+`docs/banner.jpg` (README) va `docs/social-preview.png` (GitHub Social preview, 1280×640) [docs/banner/banner.html](docs/banner/banner.html) faylidan yasalgan. Ekran rasmlari yangilansa, shu HTML'ni Chrome headless bilan qayta suratga oling:
+
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars --allow-file-access-from-files --window-size=1280,640 --screenshot=docs/social-preview.png "file://$PWD/docs/banner/banner.html"
+```
 
 ## Litsenziyalar
 
