@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="widget_bg">#FFFFFFFF</color>
+    <color name="widget_text">#FF15161B</color>
+    <color name="widget_text_secondary">#FF5B606D</color>
+    <color name="widget_accent">#FFFF9F1C</color>
+    <string name="widget_label">Navo</string>
+    <string name="widget_description">Now playing with playback controls</string>
+</resources>

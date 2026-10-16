@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The media notification icon is referenced only by name from Dart
+  (AudioServiceConfig.androidNotificationIcon = "drawable/ic_stat_navo"),
+  so release resource shrinking can't see it and removes it. Android then
+  rejects the notification ("no valid small icon") and the app crashes on
+  the first notification update. Keep it explicitly.
+
+  The same applies to audio_service's control icons (MediaControl.androidIcon
+  is also a name string); without them the media session can't publish its
+  state and no notification / lock-screen controls appear.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/ic_stat_navo,@drawable/audio_service_*,@drawable/ic_widget_*,@drawable/ic_notif_*,@layout/navo_widget,@mipmap/ic_launcher" />

@@ -1,0 +1,6 @@
+Navo demo content
+=================
+The audio files, cover images and .lrc lyrics in this folder were created
+from scratch for the Navo app (synthesised in code, drawn in code, written
+by hand). They are dedicated to the public domain under CC0 1.0:
+https://creativecommons.org/publicdomain/zero/1.0/

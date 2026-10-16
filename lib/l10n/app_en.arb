@@ -1,0 +1,739 @@
+{
+  "@@locale": "en",
+  "appName": "Navo",
+  "appTagline": "Your music, offline",
+  "onboardingTitle1": "A friendly player for all the music on your device",
+  "onboardingTitle2": "Clear, rich sound tuned for every listen",
+  "onboardingTitle3": "Listen to the music you love with Navo",
+  "next": "Next",
+  "getStarted": "Get Started",
+  "skip": "Skip",
+  "tabSuggested": "Suggested",
+  "tabSongs": "Songs",
+  "tabArtists": "Artists",
+  "tabAlbums": "Albums",
+  "tabFolders": "Folders",
+  "navHome": "Home",
+  "navFavorites": "Favorites",
+  "navPlaylists": "Playlists",
+  "navSettings": "Settings",
+  "recentlyPlayed": "Recently Played",
+  "mostPlayed": "Most Played",
+  "seeAll": "See All",
+  "songs": "Songs",
+  "search": "Search",
+  "songsCount": "{count, plural, =0{No songs} =1{1 song} other{{count} songs}}",
+  "@songsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "compact"
+      }
+    }
+  },
+  "albumsCount": "{count, plural, =0{No albums} =1{1 album} other{{count} albums}}",
+  "@albumsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "compact"
+      }
+    }
+  },
+  "artistsCount": "{count, plural, =0{No artists} =1{1 artist} other{{count} artists}}",
+  "@artistsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "compact"
+      }
+    }
+  },
+  "foldersCount": "{count, plural, =0{No folders} =1{1 folder} other{{count} folders}}",
+  "@foldersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "compact"
+      }
+    }
+  },
+  "playlistsCount": "{count, plural, =0{No playlists} =1{1 playlist} other{{count} playlists}}",
+  "@playlistsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "compact"
+      }
+    }
+  },
+  "durationMins": "{time} mins",
+  "@durationMins": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "minutesCount": "{count, plural, =1{1 minute} other{{count} minutes}}",
+  "@minutesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sortBy": "Sort by",
+  "sortAscending": "Ascending",
+  "sortDescending": "Descending",
+  "sortArtist": "Artist",
+  "sortAlbum": "Album",
+  "sortYear": "Year",
+  "sortDateAdded": "Date Added",
+  "sortDateModified": "Date Modified",
+  "sortComposer": "Composer",
+  "sortSongCount": "Number of Songs",
+  "sortAlbumCount": "Number of Albums",
+  "play": "Play",
+  "shuffle": "Shuffle",
+  "playNext": "Play Next",
+  "addToQueue": "Add to Playing Queue",
+  "addToPlaylist": "Add to Playlist",
+  "goToAlbum": "Go to Album",
+  "goToArtist": "Go to Artist",
+  "details": "Details",
+  "setAsRingtone": "Set as Ringtone",
+  "addToBlocklist": "Add to Blocklist",
+  "share": "Share",
+  "deleteFromDevice": "Delete from Device",
+  "addToFavorites": "Add to Favorites",
+  "removeFromFavorites": "Remove from Favorites",
+  "removeFromPlaylist": "Remove from Playlist",
+  "removeFromQueue": "Remove from Queue",
+  "more": "More",
+  "songDetails": "Song details",
+  "detailTitle": "Title",
+  "detailArtist": "Artist",
+  "detailAlbum": "Album",
+  "detailComposer": "Composer",
+  "detailGenre": "Genre",
+  "detailYear": "Year",
+  "detailDuration": "Duration",
+  "detailFormat": "Format",
+  "detailSize": "Size",
+  "detailPath": "Location",
+  "detailDateAdded": "Date added",
+  "unknown": "Unknown",
+  "unknownArtist": "Unknown artist",
+  "unknownAlbum": "Unknown album",
+  "demoTrack": "Demo",
+  "close": "Close",
+  "lyrics": "Lyrics",
+  "noLyrics": "No lyrics found",
+  "noLyricsHint": "Put an .lrc file with the same name next to the song, or embed lyrics in its tags.",
+  "playingQueue": "Playing Queue",
+  "queueEmpty": "The queue is empty",
+  "nowPlaying": "Now Playing",
+  "playbackSpeed": "Playback speed",
+  "sleepTimer": "Sleep timer",
+  "sleepTimerEndOfTrack": "End of current song",
+  "sleepTimerOff": "Turn off timer",
+  "sleepTimerRemaining": "Stops in {time}",
+  "@sleepTimerRemaining": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "sleepTimerSet": "Playback will stop in {minutes}",
+  "@sleepTimerSet": {
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "sleepTimerEndSet": "Playback will stop after this song",
+  "audioOutput": "Audio output",
+  "audioOutputUnavailable": "Couldn't open the output picker on this device",
+  "volume": "Volume",
+  "repeatOff": "Repeat off",
+  "repeatAll": "Repeat all",
+  "repeatOne": "Repeat one",
+  "shuffleOn": "Shuffle on",
+  "shuffleOff": "Shuffle off",
+  "previous": "Previous",
+  "pause": "Pause",
+  "rewind10": "Back 10 seconds",
+  "forward10": "Forward 10 seconds",
+  "back": "Back",
+  "favorites": "Favorites",
+  "noFavorites": "No favorites yet",
+  "noFavoritesHint": "Tap the heart on any song to keep it here.",
+  "addedToFavorites": "Added to Favorites",
+  "removedFromFavorites": "Removed from Favorites",
+  "playlists": "Playlists",
+  "newPlaylist": "New playlist",
+  "playlistName": "Playlist name",
+  "create": "Create",
+  "rename": "Rename",
+  "renamePlaylist": "Rename playlist",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "save": "Save",
+  "deletePlaylistTitle": "Delete playlist?",
+  "deletePlaylistMessage": "“{name}” will be removed. The songs stay on your device.",
+  "@deletePlaylistMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "noPlaylists": "No playlists yet",
+  "noPlaylistsHint": "Create a playlist to group the songs you love.",
+  "emptyPlaylist": "This playlist is empty",
+  "emptyPlaylistHint": "Add songs from the song menu: ⋮ → Add to Playlist.",
+  "addedToPlaylist": "Added to “{name}”",
+  "@addedToPlaylist": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "alreadyInPlaylist": "Already in “{name}”",
+  "@alreadyInPlaylist": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "playlistNameEmpty": "Enter a name",
+  "searchHint": "Search songs, artists, albums",
+  "recentSearches": "Recent Searches",
+  "clearAll": "Clear All",
+  "noResults": "Nothing found for “{query}”",
+  "@noResults": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchEmptyHint": "Find any song, artist or album on your device.",
+  "nothingPlayedYet": "Nothing played yet",
+  "nothingPlayedHint": "Songs you listen to will show up here.",
+  "noArtists": "No artists found",
+  "noAlbums": "No albums found",
+  "noFolders": "No folders found",
+  "permissionTitle": "Allow access to your music",
+  "permissionMessage": "Navo needs permission to find audio files on your device. The demo tracks work without it.",
+  "permissionDeniedMessage": "Access was denied. You can enable it in the system settings.",
+  "allowAccess": "Allow access",
+  "openSettings": "Open settings",
+  "noSongsTitle": "No songs found",
+  "noSongsMessage": "Copy some music to your device, or enjoy the demo tracks.",
+  "errorTitle": "Something went wrong",
+  "retry": "Try again",
+  "addedToQueue": "Added to the playing queue",
+  "willPlayNext": "Will play next",
+  "addedToBlocklist": "Hidden from your library",
+  "undo": "Undo",
+  "ringtoneSet": "Ringtone set",
+  "ringtoneNeedsPermission": "Allow Navo to modify system settings, then try again.",
+  "actionFailed": "Couldn't complete the action",
+  "songDeleted": "Song deleted",
+  "deleteSongTitle": "Delete from device?",
+  "deleteSongMessage": "“{title}” will be permanently deleted from your device.",
+  "@deleteSongMessage": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "notAvailableForDemo": "Not available for demo tracks",
+  "settings": "Settings",
+  "sectionGeneral": "General",
+  "sectionPlayback": "Playback",
+  "sectionLibrary": "Library",
+  "sectionAbout": "About",
+  "language": "Language",
+  "languageSystem": "System default",
+  "artworkStyle": "Player artwork",
+  "artworkVinyl": "Vinyl (rotating)",
+  "artworkSquare": "Square",
+  "showDemoTracks": "Show demo tracks",
+  "blockedSongs": "Blocked songs",
+  "blockedSongsEmpty": "No blocked songs",
+  "unblock": "Unblock",
+  "rescanLibrary": "Rescan library",
+  "libraryRescanned": "Library updated",
+  "showOnboarding": "Show introduction again",
+  "about": "About",
+  "versionLabel": "Version {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "designedBy": "Designed and developed by Feruzbek Namozboyev",
+  "aboutBio": "Flutter developer",
+  "contactTelegram": "Telegram",
+  "madeWithFlutter": "Made with Flutter",
+  "copyright": "© {year} Feruzbek Namozboyev",
+  "@copyright": {
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "linkOpenFailed": "Couldn't open the link",
+  "openSourceLicenses": "Open-source licenses",
+  "cannotPlayFile": "Can't play “{title}”. Skipping to the next song.",
+  "cannotPlayUnknown": "This file can't be played.",
+  "notificationChannelName": "Playback",
+  "notificationsDeniedMessage": "Allow notifications to control playback from the notification shade and lock screen.",
+  "backgroundPlayback": "Background playback",
+  "backgroundPlaybackHint": "If music stops when the screen is off, allow Navo to run without battery restrictions.",
+  "batterySettings": "Battery settings",
+  "later": "Later",
+  "contactYouTube": "YouTube",
+  "youtubeChannel": "Feruzbek Namozboyev channel",
+  "@cannotPlayFile": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsSearchHint": "Search settings",
+  "resetAll": "Reset all settings",
+  "resetAllTitle": "Reset all settings?",
+  "resetAllMessage": "Every setting goes back to its default. Your music, playlists and favorites are kept.",
+  "resetGroup": "Reset to defaults",
+  "resetGroupTitle": "Reset “{group}”?",
+  "@resetGroupTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "resetGroupMessage": "Settings in this section go back to their defaults.",
+  "reset": "Reset",
+  "settingsRestored": "Settings restored to defaults",
+  "noSettingsFound": "No settings match “{query}”",
+  "@noSettingsFound": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "groupAppearance": "Appearance",
+  "groupPlayer": "Player",
+  "groupPlayback": "Playback",
+  "groupAudio": "Audio & Equalizer",
+  "groupLibrary": "Library",
+  "groupLyrics": "Lyrics",
+  "groupNotifications": "Notifications",
+  "groupGestures": "Gestures",
+  "groupStorage": "Storage & Backup",
+  "groupAccessibility": "Accessibility",
+  "groupPrivacy": "Privacy",
+  "appearanceSubtitle": "Theme, colors, fonts, layout",
+  "librarySubtitle": "Demo tracks, hidden songs, scanning",
+  "languageSubtitle": "Oʻzbekcha, Русский, English",
+  "accessibilitySubtitle": "Contrast, text size, motion",
+  "privacySubtitle": "Offline, no tracking",
+  "playbackSubtitle": "Crossfade, speed, behavior, sleep timer",
+  "aboutSubtitle": "Version, author, licenses",
+  "sectionTheme": "Theme",
+  "themeMode": "Theme",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "themeAmoled": "AMOLED black",
+  "themeSchedule": "Dark theme on a schedule",
+  "themeScheduleHint": "Light during the day, dark at night",
+  "darkFrom": "Dark from",
+  "darkUntil": "Dark until",
+  "sectionColor": "Accent color",
+  "accentSource": "Color source",
+  "accentPreset": "Palette",
+  "accentCustom": "Custom",
+  "accentMaterialYou": "Material You (wallpaper)",
+  "accentAdaptive": "From album art",
+  "materialYouUnavailable": "Needs Android 12 or newer; using the palette color.",
+  "hue": "Hue",
+  "saturation": "Saturation",
+  "lightness": "Brightness",
+  "sectionText": "Text",
+  "font": "Font",
+  "textSize": "Text size",
+  "boldText": "Bold text",
+  "sectionLayout": "Layout",
+  "corners": "Corners",
+  "cornersSharp": "Sharp",
+  "cornersMedium": "Medium",
+  "cornersRound": "Round",
+  "density": "List density",
+  "densityCompact": "Compact",
+  "densityComfortable": "Comfortable",
+  "densitySpacious": "Spacious",
+  "artShape": "Artwork shape",
+  "shapeRounded": "Rounded",
+  "shapeCircle": "Circle",
+  "artSize": "Artwork size",
+  "sizeSmall": "Small",
+  "sizeMedium": "Medium",
+  "sizeLarge": "Large",
+  "showListArtwork": "Show artwork in lists",
+  "sectionPlayerLook": "Player screen",
+  "playerStyle": "Player style",
+  "styleClassic": "Classic",
+  "styleMinimal": "Minimal",
+  "styleBlurred": "Blurred artwork",
+  "blurStrength": "Blur strength",
+  "animatedBackground": "Animated background",
+  "sectionNavigation": "Navigation",
+  "showNavLabels": "Show tab labels",
+  "navTabs": "Bottom tabs",
+  "navTabsHint": "Drag to reorder, untick to hide",
+  "startTab": "Start tab",
+  "homeTabs": "Home tabs",
+  "startHomeTab": "Default Home tab",
+  "miniPlayerStyle": "Mini player",
+  "miniFloating": "Floating",
+  "miniDocked": "Docked",
+  "sectionMotion": "Motion",
+  "animations": "Animations",
+  "animFull": "Full",
+  "animReduced": "Reduced",
+  "animOff": "Off",
+  "systemReduceMotion": "The system “remove animations” setting is on, so motion stays reduced.",
+  "preview": "Preview",
+  "highContrast": "High contrast",
+  "highContrastHint": "Stronger text and outlines",
+  "privacyStatement": "Navo works fully offline. It has no ads, no analytics and no tracking. Your music, playlists and listening history stay on this device and are never sent anywhere.",
+  "saveSearchHistory": "Remember recent searches",
+  "percentValue": "{value}%",
+  "@percentValue": {
+    "placeholders": {
+      "value": {
+        "type": "int"
+      }
+    }
+  },
+  "aboutNavo": "About Navo",
+  "playerSubtitle": "Style, background, seek bar",
+  "audioSubtitle": "Equalizer, bass boost, loudness",
+  "showRemainingTime": "Show remaining time",
+  "sectionTransitions": "Transitions",
+  "crossfade": "Crossfade",
+  "crossfadeHint": "Fades the end of a song out and the next one in",
+  "secondsShort": "{n} s",
+  "@secondsShort": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "off": "Off",
+  "fadeOnPlayPause": "Fade on play and pause",
+  "skipSilence": "Skip silence",
+  "normalizeVolume": "Volume normalization (ReplayGain)",
+  "normalizeHint": "Uses ReplayGain tags when a file has them",
+  "pitch": "Pitch",
+  "resetValue": "Reset",
+  "sectionBehavior": "Behavior",
+  "resumeAfterCall": "Resume after a call",
+  "pauseOnDisconnect": "Pause when headphones disconnect",
+  "resumeOnHeadset": "Resume when headphones connect",
+  "rememberQueue": "Remember queue and position",
+  "autoPlayOnStart": "Play automatically on start",
+  "addMode": "Default “add to queue”",
+  "addToEnd": "Add to end of queue",
+  "shuffleStyle": "Shuffle",
+  "shuffleRandom": "Truly random",
+  "shuffleAvoidRecent": "Avoid recently played",
+  "sectionSleep": "Sleep timer",
+  "sleepFadeOut": "Fade out before stopping",
+  "shakeToExtend": "Shake to add 10 minutes",
+  "sleepExtended": "Sleep timer extended by 10 minutes",
+  "equalizer": "Equalizer",
+  "eqEnabled": "Enable equalizer",
+  "presets": "Presets",
+  "eqNormal": "Normal",
+  "eqBass": "Bass",
+  "eqTreble": "Treble",
+  "eqRock": "Rock",
+  "eqPop": "Pop",
+  "eqJazz": "Jazz",
+  "eqClassical": "Classical",
+  "eqVocal": "Vocal",
+  "eqCustom": "Custom",
+  "savePreset": "Save as preset",
+  "presetName": "Preset name",
+  "deletePreset": "Delete preset",
+  "bassBoost": "Bass boost",
+  "loudnessBoost": "Loudness boost",
+  "eqUnavailable": "The equalizer isn’t available on this device.",
+  "eqStartPlayback": "Start playing a song to adjust the bands.",
+  "hz": "{value} Hz",
+  "@hz": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "khz": "{value} kHz",
+  "@khz": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "db": "{value} dB",
+  "@db": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "abRepeat": "A–B repeat",
+  "abSetA": "Set point A",
+  "abSetB": "Set point B",
+  "abClear": "Turn off A–B repeat",
+  "queueRemoved": "Removed “{title}”",
+  "@queueRemoved": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "clearQueue": "Clear upcoming",
+  "queueCleared": "Upcoming songs cleared",
+  "saveQueueAsPlaylist": "Save as playlist",
+  "editTags": "Edit tags",
+  "changeArtwork": "Change artwork",
+  "removeArtwork": "Remove artwork",
+  "tagsSaved": "Tags saved",
+  "tagsNotSupported": "This file can’t be edited",
+  "tagsFailed": "Couldn’t save the tags",
+  "yearInvalid": "Enter a valid year",
+  "smartPlaylists": "Smart playlists",
+  "myPlaylists": "My playlists",
+  "recentlyAdded": "Recently Added",
+  "neverPlayed": "Never Played",
+  "importM3u": "Import M3U playlist",
+  "exportM3u": "Export as M3U",
+  "m3uImported": "Imported “{name}”: {songs}",
+  "@m3uImported": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "songs": {
+        "type": "String"
+      }
+    }
+  },
+  "m3uNoMatches": "None of the playlist’s songs were found on this device",
+  "m3uExported": "Playlist exported",
+  "selectedCount": "{count, plural, =1{1 selected} other{{count} selected}}",
+  "@selectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "selectAll": "Select all",
+  "cancelSelection": "Cancel selection",
+  "deleteSongsTitle": "{count, plural, =1{Delete 1 song from device?} other{Delete {count} songs from device?}}",
+  "@deleteSongsTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSongsMessage": "The selected files will be permanently deleted from your device.",
+  "songsDeleted": "{count, plural, =1{1 song deleted} other{{count} songs deleted}}",
+  "@songsDeleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "addedToFavoritesMany": "Added to Favorites",
+  "queueAction": "Queue",
+  "sectionFolders": "Folders",
+  "libraryFolders": "Library folders",
+  "libraryFoldersHint": "Choose which folders appear in your library",
+  "folderShown": "Shown",
+  "folderHidden": "Hidden",
+  "folderOnly": "Only these",
+  "folderOnlyActive": "Only folders marked “Only these” are shown",
+  "resetFolders": "Show all folders",
+  "foldersSummary": "{hidden} hidden",
+  "@foldersSummary": {
+    "placeholders": {
+      "hidden": {
+        "type": "int"
+      }
+    }
+  },
+  "allFoldersShown": "All folders shown",
+  "sectionFilters": "Filters",
+  "minDuration": "Minimum song length",
+  "minSize": "Minimum file size",
+  "kbValue": "{n} KB",
+  "@kbValue": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "hideShortSounds": "Hide ringtones and notification sounds",
+  "sectionScanning": "Scanning",
+  "scanOnLaunch": "Scan for new music on launch",
+  "scanning": "Scanning your music…",
+  "scanFound": "Library updated: {songs}",
+  "@scanFound": {
+    "placeholders": {
+      "songs": {
+        "type": "String"
+      }
+    }
+  },
+  "sectionGrouping": "Grouping",
+  "splitArtists": "Split multiple artists",
+  "splitArtistsHint": "Treat “A feat. B”, “A & B” and “A; B” as separate artists",
+  "groupByAlbumArtist": "Group by album artist",
+  "lyricsSubtitle": "Text size, alignment, timing",
+  "notificationsSubtitle": "Notification buttons, headset button",
+  "lyricsFontSize": "Lyrics text size",
+  "lyricsAlign": "Alignment",
+  "alignStart": "Left",
+  "alignCenter": "Centered",
+  "lyricsOffset": "Timing offset",
+  "lyricsOffsetHint": "Use it when synced lyrics run ahead or behind",
+  "offsetSeconds": "{value} s",
+  "@offsetSeconds": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "keepScreenOn": "Keep screen on while lyrics are open",
+  "autoScrollLyrics": "Follow the current line",
+  "lyricsSmaller": "Smaller text",
+  "lyricsLarger": "Larger text",
+  "lyricsEarlier": "Show lyrics earlier",
+  "lyricsLater": "Show lyrics later",
+  "sectionNotification": "Media notification",
+  "notifArtwork": "Show album art",
+  "notifCloseButton": "Show close button",
+  "notifFavoriteButton": "Favorite button",
+  "notifCompactSkip": "Previous and next in compact view",
+  "notificationPermission": "Notification permission",
+  "notificationPermissionHint": "Needed for controls in the notification shade on Android 13+",
+  "sectionHeadset": "Headset button",
+  "pressSingle": "Single press",
+  "pressDouble": "Double press",
+  "pressTriple": "Triple press",
+  "actionPlayPause": "Play / pause",
+  "actionNext": "Next song",
+  "actionPrevious": "Previous song",
+  "actionNone": "Do nothing",
+  "sectionWidget": "Home screen widget",
+  "widgetHint": "Long-press your home screen, choose Widgets and add Navo.",
+  "widgetNothingPlaying": "Nothing playing",
+  "gesturesSubtitle": "Mini player swipe, haptics",
+  "gestureMiniSwipe": "Swipe mini player for next / previous",
+  "gestureDoubleTap": "Double-tap artwork to play / pause",
+  "gestureSwipeArtwork": "Swipe artwork to change song",
+  "gestureShake": "Shake to skip",
+  "gestureShakeSensitivity": "Shake sensitivity",
+  "gestureVolumeSeek": "Volume buttons seek in the player",
+  "gestureVolumeSeekHint": "While the player is open: up = +10 s, down = −10 s",
+  "haptics": "Haptic feedback",
+  "stats": "Listening statistics",
+  "statsSubtitle": "Stored only on this device",
+  "statsTotal": "Total listening time",
+  "statsThisWeek": "This week",
+  "statsLast7Days": "Last 7 days",
+  "statsTopSongs": "Top songs",
+  "statsTopArtists": "Top artists",
+  "statsTopAlbums": "Top albums",
+  "statsEmpty": "No listening data yet",
+  "statsEmptyHint": "Play some music and come back to see your stats.",
+  "statsDisabled": "Statistics are turned off in Privacy settings.",
+  "collectStats": "Collect listening statistics",
+  "clearStats": "Clear statistics",
+  "clearStatsTitle": "Clear listening statistics?",
+  "clearStatsMessage": "Listening time, top lists and play counts will be reset.",
+  "statsCleared": "Statistics cleared",
+  "hoursMinutes": "{h} h {m} min",
+  "@hoursMinutes": {
+    "placeholders": {
+      "h": {
+        "type": "int"
+      },
+      "m": {
+        "type": "int"
+      }
+    }
+  },
+  "minutesOnly": "{m} min",
+  "@minutesOnly": {
+    "placeholders": {
+      "m": {
+        "type": "int"
+      }
+    }
+  },
+  "dayMinutes": "{day}: {minutes}",
+  "@dayMinutes": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "filterAll": "All",
+  "quickActions": "Quick actions",
+  "advancedSettings": "Advanced",
+  "advancedSettingsCount": "{count, plural, =1{1 more setting} other{{count} more settings}}",
+  "@advancedSettingsCount": {"placeholders": {"count": {"type": "int"}}},
+  "storageSubtitle": "Back up and restore settings, favorites, playlists",
+  "backupExport": "Create backup",
+  "backupExportHint": "Settings, favorites, playlists and hidden songs to a file",
+  "backupImport": "Restore from backup",
+  "backupImportHint": "Replaces current settings, favorites and playlists",
+  "backupSaved": "Backup saved",
+  "backupRestored": "Backup restored",
+  "backupInvalid": "This file is not a Navo backup",
+  "restoreBackupTitle": "Restore backup?",
+  "restoreBackupMessage": "Your current settings, favorites and playlists will be replaced."
+}
